@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "732625336732",
+    "project_id": "scenio-3f211",
+    "storage_bucket": "scenio-3f211.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732625336732:android:a924abf44a47eac719f059",
+        "android_client_info": {
+          "package_name": "com.example.sceniocompose"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADWA5U4VHQLlVQdU8JFQwUqvL7YOG8v_w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732625336732:android:07dd916467a82b0e19f059",
+        "android_client_info": {
+          "package_name": "com.firebaseauth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADWA5U4VHQLlVQdU8JFQwUqvL7YOG8v_w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
