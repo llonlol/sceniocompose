@@ -112,17 +112,20 @@ fun CrearHistoriaScreen(navController: NavController) {
                                 .collection("historias")
                                 .add(mapOf("texto" to historia, "timestamp" to FieldValue.serverTimestamp()))
                                 .addOnSuccessListener {
+                                    // ✅ Sumar 1 al campo "xp"
+                                    Firebase.firestore.collection("users")
+                                        .document(uid)
+                                        .update("xp", FieldValue.increment(1))
+
                                     mensaje = "¡Entrada guardada exitosamente!"
                                     historia = ""
                                     loading = false
-                                    navController.navigate("parati")
+                                    navController.navigate("inicio")
                                 }
                                 .addOnFailureListener {
                                     mensaje = "Error al guardar. Intenta de nuevo."
                                     loading = false
                                 }
-
-                            navController.navigate("inicio")
                         } else {
                             mensaje = "Usuario no autenticado"
                         }

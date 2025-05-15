@@ -125,11 +125,15 @@ fun SignUpScreen(navController: NavController) {
                     .border(7.dp, borderColor, shape = RoundedCornerShape(30.dp))
                     .height(70.dp)
                     .onFocusChanged { usernameFocused = it.isFocused },
+                textStyle = MaterialTheme.typography.headlineMedium.copy(
+                    fontSize = 24.sp,
+                    color = Color(60, 50, 40)
+                ),
                 colors = TextFieldDefaults.colors(
                     focusedContainerColor = backgroundColor,
                     unfocusedContainerColor = backgroundColor,
-                    focusedTextColor = Color(199, 185, 166),
-                    unfocusedTextColor = Color(199, 185, 166),
+                    focusedTextColor = Color(60, 50, 40),
+                    unfocusedTextColor = Color(60, 50, 40),
                     focusedIndicatorColor = Color.Transparent,
                     unfocusedIndicatorColor = Color.Transparent
                 )
@@ -152,6 +156,10 @@ fun SignUpScreen(navController: NavController) {
                     .border(7.dp, borderColor, shape = RoundedCornerShape(30.dp))
                     .height(70.dp)
                     .onFocusChanged { emailFocused = it.isFocused },
+                textStyle = MaterialTheme.typography.headlineMedium.copy(
+                    fontSize = 24.sp,
+                    color = Color(60, 50, 40)
+                ),
                 colors = TextFieldDefaults.colors(
                     focusedContainerColor = backgroundColor,
                     unfocusedContainerColor = backgroundColor,
@@ -180,6 +188,10 @@ fun SignUpScreen(navController: NavController) {
                     .border(7.dp, borderColor, shape = RoundedCornerShape(30.dp))
                     .height(70.dp)
                     .onFocusChanged { passwordFocused = it.isFocused },
+                textStyle = MaterialTheme.typography.headlineMedium.copy(
+                    fontSize = 24.sp,
+                    color = Color(60, 50, 40)
+                ),
                 colors = TextFieldDefaults.colors(
                     focusedContainerColor = backgroundColor,
                     unfocusedContainerColor = backgroundColor,
